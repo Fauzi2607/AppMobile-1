@@ -1,9 +1,9 @@
 void main() {
 
-  // ==============================
+  
   // CONST
   // Data yang nilainya sudah pasti
-  // ==============================
+  
 
   const String namaToko = 'SEGER DRINK';
   const String alamatToko = 'Tangerang, Global Institute';
@@ -11,38 +11,33 @@ void main() {
   const String mataUang = 'Rp';
 
 
-  // ==============================
   // FINAL
   // Data hanya diisi satu kali
-  // ==============================
+  
 
   final String namaPembeli = 'Mohamad Fauzi';
   final String nomorTransaksi = 'TRX-2026-001';
   final DateTime waktuTransaksi = DateTime.now();
 
 
-  // ==============================
+  
   // DATA MINUMAN
-  // ==============================
+  
 
   String namaMinuman = 'Matcha Latte';
   int jumlahMinuman = 2;
   double hargaMinuman = 18000.0;
 
 
-  // ==============================
   // BOOL
   // Status pembayaran
-  // ==============================
-
+  
   bool pembayaranBerhasil = true;
 
 
-  // ==============================
   // LATE
   // Nomor struk dibuat setelah
   // data transaksi tersedia
-  // ==============================
 
   late String nomorStruk;
 
@@ -50,10 +45,8 @@ void main() {
       'STRUK-${DateTime.now().millisecondsSinceEpoch}';
 
 
-  // ==============================
   // LIST
   // Daftar minuman
-  // ==============================
 
   List<String> daftarMinuman = [
     'Matcha',
@@ -67,10 +60,8 @@ void main() {
   ];
 
 
-  // ==============================
   // SET
   // Kategori minuman
-  // ==============================
 
   Set<String> kategoriMinuman = {
     'Matcha',
@@ -84,10 +75,8 @@ void main() {
   };
 
 
-  // ==============================
   // MAP
   // Data minuman
-  // ==============================
 
   Map<String, dynamic> dataMinuman = {
     'nama': namaMinuman,
@@ -97,9 +86,7 @@ void main() {
   };
 
 
-  // ==============================
   // PERHITUNGAN
-  // ==============================
 
   double subtotal =
       hargaMinuman * jumlahMinuman;
@@ -111,9 +98,7 @@ void main() {
       subtotal + nilaiPajak;
 
 
-  // ==============================
   // STRUK PENJUALAN
-  // ==============================
 
   print('==========================================');
   print('              $namaToko');
