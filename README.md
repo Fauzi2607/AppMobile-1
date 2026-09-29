@@ -1,12 +1,14 @@
 # SEGER DRINK
 
-NAMA : MOHAMAD FAUZI
+**NAMA : MOHAMAD FAUZI**
 
-PROGRAM : PENJUALAN MINUMAN
+**PROGRAM : PENJUALAN MINUMAN**
 
 ---
 
 ## Explicit Typing (Tanpa var)
+
+Explicit Typing digunakan untuk menentukan tipe data secara langsung, seperti `String`, `int`, `double`, dan `bool`.
 
 ```dart
 void main() {
@@ -33,6 +35,8 @@ void main() {
 ---
 
 ## Sound Null Safety
+
+Sound Null Safety digunakan untuk membedakan variabel yang boleh memiliki nilai `null` dan yang tidak boleh memiliki nilai `null`.
 
 ```dart
 void main() {
@@ -72,13 +76,12 @@ void main() {
 
 ## Final & Const dengan Tipe Eksplisit
 
+### FINAL
+
+`final` digunakan untuk variabel yang hanya dapat diberikan nilai satu kali.
+
 ```dart
 void main() {
-
-  // FINAL
-  // Nilainya ditentukan saat program berjalan
-  // dan hanya bisa diisi satu kali
-
   final String orderId = 'ORD-2026-001';
   final DateTime orderTime = DateTime.now();
 
@@ -86,32 +89,33 @@ void main() {
   final int nomorAntrian = 15;
   final String namaMinuman = 'Matcha Latte';
 
-
-  // CONST
-  // Nilainya sudah diketahui sejak compile-time
-  // dan tidak dapat diubah
-
-  const String namaToko = 'SEGER DRINK';
-  const String mataUang = 'Rp';
-  const double pajak = 0.11;
-
-
   print('==============================');
   print('       DATA PEMESANAN');
   print('==============================');
 
-  print('Nama Toko      : $namaToko');
   print('Order ID       : $orderId');
   print('Waktu          : $orderTime');
   print('Nama Pelanggan : $namaPelanggan');
   print('Nomor Antrian  : $nomorAntrian');
   print('Nama Minuman   : $namaMinuman');
 
-  print('------------------------------');
-  print('Mata Uang      : $mataUang');
-  print('Pajak          : ${pajak * 100}%');
-
   print('==============================');
+}
+```
+
+### CONST
+
+`const` digunakan untuk nilai yang sudah diketahui sejak compile-time dan tidak dapat diubah.
+
+```dart
+void main() {
+  const String namaToko = 'SEGER DRINK';
+  const String mataUang = 'Rp';
+  const double pajak = 0.11;
+
+  print('Nama Toko : $namaToko');
+  print('Mata Uang : $mataUang');
+  print('Pajak     : ${pajak * 100}%');
 }
 ```
 
@@ -119,18 +123,17 @@ void main() {
 
 ## Let Modifier dengan Final dan Const
 
+Pada Dart digunakan `late` untuk mendeklarasikan variabel yang nilainya akan diberikan kemudian.
+
 ```dart
 void main() {
-
   // FINAL
   final String orderId = 'ORD-2026-001';
   final DateTime orderTime = DateTime.now();
 
-
   // CONST
   const String namaToko = 'SEGER DRINK';
   const String mataUang = 'Rp';
-
 
   // LATE
   late String nomorStruk;
@@ -138,7 +141,6 @@ void main() {
   // Nomor struk baru dibuat saat proses generate dijalankan
   nomorStruk =
       'REC-${DateTime.now().millisecondsSinceEpoch}';
-
 
   print('==============================');
   print('       DATA PEMESANAN');
@@ -156,11 +158,12 @@ void main() {
 
 ---
 
-## Daftar Type Data
+# Daftar Type Data
+
+Berikut merupakan contoh penggunaan berbagai tipe data Dart dalam program penjualan minuman **SEGER DRINK**.
 
 ```dart
 void main() {
-
   // ==============================
   // CONST
   // Data yang nilainya sudah pasti
@@ -171,7 +174,6 @@ void main() {
   const double pajak = 0.11;
   const String mataUang = 'Rp';
 
-
   // ==============================
   // FINAL
   // Data hanya diisi satu kali
@@ -181,7 +183,6 @@ void main() {
   final String nomorTransaksi = 'TRX-2026-001';
   final DateTime waktuTransaksi = DateTime.now();
 
-
   // ==============================
   // DATA MINUMAN
   // ==============================
@@ -190,14 +191,12 @@ void main() {
   int jumlahMinuman = 2;
   double hargaMinuman = 18000.0;
 
-
   // ==============================
   // BOOL
   // Status pembayaran
   // ==============================
 
   bool pembayaranBerhasil = true;
-
 
   // ==============================
   // LATE
@@ -209,7 +208,6 @@ void main() {
 
   nomorStruk =
       'STRUK-${DateTime.now().millisecondsSinceEpoch}';
-
 
   // ==============================
   // LIST
@@ -227,7 +225,6 @@ void main() {
     'Teh Tarik',
   ];
 
-
   // ==============================
   // SET
   // Kategori minuman
@@ -244,7 +241,6 @@ void main() {
     'Teh Tarik',
   };
 
-
   // ==============================
   // MAP
   // Data minuman
@@ -256,7 +252,6 @@ void main() {
     'jumlah': jumlahMinuman,
     'tersedia': true,
   };
-
 
   // ==============================
   // PERHITUNGAN
@@ -270,7 +265,6 @@ void main() {
 
   double totalBayar =
       subtotal + nilaiPajak;
-
 
   // ==============================
   // STRUK PENJUALAN
@@ -321,36 +315,31 @@ void main() {
 
 ## Daftar Menu Minuman
 
-1. Matcha
-2. Coffee
-3. Coklat
-4. Tiramisu
-5. Choco Oatmeal
-6. Latte
-7. Ovaltine
-8. Teh Tarik
+| No | Nama Minuman |
+|---|---|
+| 1 | Matcha |
+| 2 | Coffee |
+| 3 | Coklat |
+| 4 | Tiramisu |
+| 5 | Choco Oatmeal |
+| 6 | Latte |
+| 7 | Ovaltine |
+| 8 | Teh Tarik |
 
 ---
 
-## Kesimpulan
+## Tipe Data yang Digunakan
 
-Program SEGER DRINK merupakan program sederhana menggunakan bahasa Dart untuk mensimulasikan transaksi penjualan minuman.
-
-Program menerapkan beberapa tipe data dan fitur dasar Dart, yaitu:
-
-- Explicit Typing
-- String
-- int
-- double
-- bool
-- Sound Null Safety
-- final
-- const
-- late
-- List
-- Set
-- Map
-- Perhitungan
-- If Else
-
-Program digunakan untuk menampilkan data minuman, data pelanggan, daftar menu, nomor transaksi, nomor struk, perhitungan harga, pajak, total pembayaran, dan status pembayaran.
+| Tipe Data | Fungsi |
+|---|---|
+| `String` | Menyimpan teks seperti nama minuman |
+| `int` | Menyimpan jumlah minuman |
+| `double` | Menyimpan harga dan perhitungan |
+| `bool` | Menyimpan status pembayaran |
+| `String?` | Menyimpan data yang dapat bernilai `null` |
+| `final` | Nilai hanya dapat diberikan satu kali |
+| `const` | Nilai tetap sejak compile-time |
+| `late` | Variabel diisi kemudian |
+| `List` | Menyimpan daftar minuman |
+| `Set` | Menyimpan data unik |
+| `Map` | Menyimpan data dalam bentuk pasangan key dan value |
