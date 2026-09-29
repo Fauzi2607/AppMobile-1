@@ -1,5 +1,7 @@
 NAMA : MOHAMAD FAUZI
 NIM  : 1124160236
+
+
 // //Explicit Typing (Tanpa var): //
 // void main() { String namaMinuman = 'Matcha Latte'; int jumlahMinuman = 2; double hargaMinuman = 18000.0; bool tersedia = true;
 
